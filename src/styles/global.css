@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zan-900: #2D1B69;
+  --color-zan-800: #3D2499;
+  --color-zan-700: #5B21B6;
+  --color-zan-600: #7C3AED;
+  --color-zan-100: #EDE9FE;
+  --color-zan-50: #F5F3FF;
+  --color-amber-500: #F59E0B;
+  --color-amber-400: #FBBF24;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
