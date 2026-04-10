@@ -2,10 +2,11 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// Pro GitHub Pages: pokud nemáš vlastní doménu, nastav base na název repozitáře
-// např. base: '/zan-web/' — zatím prázdné pro custom doménu nebo root deployment
+// base: název GitHub repozitáře — nutné pro správné cesty ke CSS/JS na GitHub Pages
+// Až budeš mít vlastní doménu, toto odstraň (nebo nastav na '/')
 export default defineConfig({
   output: 'static',
+  base: '/zan-web/',
   vite: {
     plugins: [tailwindcss()]
   }
